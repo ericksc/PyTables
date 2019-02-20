@@ -1224,4 +1224,4 @@ class ObjectAtom(_BufferedAtom):
         # record when in fact it is empty.
         if array.size == 0:
             return None
-        return six.moves.cPickle.loads(array.tostring())
+        return six.moves.cPickle.loads(array.tostring(), encoding='latin1')
